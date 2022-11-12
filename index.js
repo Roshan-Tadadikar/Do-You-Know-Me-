@@ -20,7 +20,7 @@ var highscore =[
 function play(question, answer){
   var myans  = readlineSync.question(question);
 
-  if(myans === answer){
+  if(myans.toLowerCase === answer){
     console.log("right!!")
     score++;
   }
@@ -66,7 +66,7 @@ for(var i=0;i<list.length;i++){
   play(list[i].quest, list[i].ans);
 }
 
-myfavFood("What's Roshan's fav food?", "chicken biryani ");
+myfavFood("What's Roshan's fav food?", "chicken biryani");
 
 
 console.log("YAY!!, you scored : ", score)
